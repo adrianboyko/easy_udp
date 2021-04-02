@@ -27,7 +27,7 @@ class EasyUDPSocket {
   }
 
   /// receive a Datagram from the socket.
-  Future<Datagram> receive({int timeout, bool explode = false}) {
+  Future<Datagram> receive({int? timeout, bool explode = false}) {
     final completer = Completer<Datagram>.sync();
     if (timeout != null) {
       Future.delayed(Duration(milliseconds: timeout)).then((_) {

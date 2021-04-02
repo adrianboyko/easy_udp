@@ -1,3 +1,7 @@
+## 1.2.1
+
+- migrated to null safety
+
 ## 1.2.0
 
 - add explode option
